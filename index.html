@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PY Weather</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-wrap">
+        <div class="header_div">PY Weather</div>
+        <header>
+            <input type="search" autocomplete="off" class="search-box" id="locationInput"
+                placeholder="Search a City or ZipCode">
+        </header>
+        <button class="btn default" onclick="getLocationWeather(),document.getElementById('locationInput').value = ''">Get Location</button><br>
+        <main>
+            <section class="location">
+                <div class="city">City,Country</div>
+                <div class="date">Thursday 10 June 2023</div>
+            </section>
+            <div class="current">
+                <div class="weather__image"><img id="current__image" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather__image"></div>
+                <div class="temp">15<span>°c</span></div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">13°c / 16°c</div>
+                <div class="humidity">65<span>%</span></div>
+            </div>
+        </main>
+        <div class="weather">
+            <h3 id="forecast-header">Weekly Forecast</h3>
+            <div class="weather__forecast">
+                <article class="weather__forecast__item">
+                    <div class="forecast__image"><img id="forecast__image" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather image"></div>
+                    <h3 class="weather__forecast__day">Day</h3>
+                    <div class="weather__forecast__temp">Temperature</div>
+                </article>
+
+                <article class="weather__forecast__item">
+                    <div class="forecast__image"><img id="forecast__image" src="http://openweathermap.org/img/wn/02d@2x.png" alt="weather image"></div>
+                    <h3 class="weather__forecast__day">Day</h3>
+                    <div class="weather__forecast__temp">Temperature</div>
+                </article>
+
+                <article class="weather__forecast__item">
+                    <div class="forecast__image"><img id="forecast__image" src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather image"></div>
+                    <h3 class="weather__forecast__day">Day</h3>
+                    <div class="weather__forecast__temp">Temperature</div>
+                </article>
+
+                <article class="weather__forecast__item">
+                    <div class="forecast__image"><img id="forecast__image" src="http://openweathermap.org/img/wn/04d@2x.png" alt="weather image"></div>
+                    <h3 class="weather__forecast__day">Day</h3>
+                    <div class="weather__forecast__temp">Temperature</div>
+                </article>
+
+                <article class="weather__forecast__item">
+                    <div class="forecast__image"><img id="forecast__image" src="http://openweathermap.org/img/wn/09d@2x.png" alt="weather image"></div>
+                    <h3 class="weather__forecast__day">Day</h3>
+                    <div class="weather__forecast__temp">Temperature</div>
+                </article>
+            </div>
+        </div>
+    <footer>
+        <h3>© 2023 PY Weather | All Rights Reserved </h3>
+        <p><a href="about.html">About Us</a> | <a href="mailto:pyweather6@gmail.com">Contact Us</a></p>
+    </footer> 
+    <script src="main.js"></script>
+</body> 
+
+</html>
